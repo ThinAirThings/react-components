@@ -3,17 +3,11 @@
   "description": "Thin Air React Component Library",
   "version": "0.0.2",
   "type": "module",
-  "files": [
-    "dist"
-  ],
-  "main": "./dist/index.umd.cjs",
-  "module": "./dist/index.js",
+  "main": "dist/index.js",
   "types": "dist/index.d.ts",
-  "exports": {
-    ".": {
-      "import": "./dist/my-lib.js",
-      "require": "./dist/my-lib.umd.cjs"
-    }
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ThinAirThings/react-components.git"
   },
   "scripts": {
     "dev": "vite",
