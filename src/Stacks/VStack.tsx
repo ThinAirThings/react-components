@@ -1,5 +1,6 @@
 import { CSSProperties, ReactNode } from "react"
 import styles from '../global.module.scss'
+import classNames from "classnames"
 export const VStack = ({
     hAlign='center',
     vAlign='center',
@@ -13,7 +14,7 @@ export const VStack = ({
     className?: string
     style?: CSSProperties
 }) => (
-    <div className={`${styles[`h-stack-${hAlign}-${vAlign}`]} ${className??''}`} style={{...style}}>
+    <div className={classNames(styles[`v-stack-${hAlign}-${vAlign}`], className)} style={{...style}}>
         {children}
     </div>
 )

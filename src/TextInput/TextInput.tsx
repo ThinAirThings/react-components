@@ -1,6 +1,6 @@
 import { CSSProperties } from 'react';
 import styles from './TextInput.module.scss';
-
+import classnames from 'classnames'
 export const TextInput = ({
     label,
     placeholder,
@@ -17,7 +17,9 @@ export const TextInput = ({
     style?: CSSProperties
 }) => {
     return (
-        <div className={`${styles.container} ${className??''}`} style={{...style}}>
+        <div 
+            className={classnames(styles.container, className)} style={{...style}}
+        >
             <span className={styles.label}>{label}</span>
             <input className={styles.textInput} type="text" placeholder={placeholder? placeholder : ''}
                 onChange={e => onChange && onChange(e.target.value)}

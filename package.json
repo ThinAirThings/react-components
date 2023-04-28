@@ -14,8 +14,8 @@
   },
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build && npm run generate-types",
-    "generate-types": "tsc --noEmit false --emitDeclarationOnly",
+    "build": "tsc --project tsconfig.build.json && vite build && npm run generate-types",
+    "generate-types": "tsc --project tsconfig.types.json --emitDeclarationOnly",
     "npmpub": "git add . && git commit -m \"mod\" && git push && npm version patch && npm publish",
     "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
