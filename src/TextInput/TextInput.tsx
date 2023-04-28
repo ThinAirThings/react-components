@@ -1,5 +1,5 @@
 import { CSSProperties } from 'react';
-import styles from './TextInput.module.scss?inline';
+import styles from './TextInput.module.scss';
 
 export const TextInput = ({
     label,

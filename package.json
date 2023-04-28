@@ -41,7 +41,8 @@
     "postcss": "^8.4.23",
     "sass": "^1.62.1",
     "typescript": "^5.0.2",
-    "vite": "^4.3.2"
+    "vite": "^4.3.2",
+    "vite-plugin-css-injected-by-js": "^3.1.0"
   },
   "dependencies": {
     "classnames": "^2.3.2"
