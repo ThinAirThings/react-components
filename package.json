@@ -3,6 +3,9 @@
   "description": "Thin Air React Component Library",
   "version": "0.0.5",
   "type": "module",
+  "files": [
+    "dist"
+  ],
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "repository": {
