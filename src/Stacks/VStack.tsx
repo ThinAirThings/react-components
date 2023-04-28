@@ -1,5 +1,5 @@
 import { CSSProperties, ReactNode } from "react"
-import styles from '../global.module.scss?inline'
+import styles from '../global.module.scss'
 export const VStack = ({
     hAlign='center',
     vAlign='center',

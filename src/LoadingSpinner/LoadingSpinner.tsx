@@ -1,5 +1,5 @@
 import { CSSProperties } from 'react'
-import styles from './LoadingSpinner.module.scss?inline'
+import styles from './LoadingSpinner.module.scss'
 
 export const LoadingSpinner = ({
     className,
