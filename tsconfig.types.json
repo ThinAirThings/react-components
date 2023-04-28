@@ -2,7 +2,7 @@
   "compilerOptions": {
     "module": "commonjs",
     "target": "es2020",
-    "outFile": "dist/index.d.ts",
+    "outDir": "dist",
     "strict": true,
     "esModuleInterop": true,
     "declaration": true,
