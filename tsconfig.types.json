@@ -1,24 +1,16 @@
 {
   "compilerOptions": {
-    "target": "ESNext",
-    "lib": ["DOM", "DOM.Iterable", "ESNext"],
-    "module": "ESNext",
-    "skipLibCheck": true,
+    "module": "commonjs",
+    "target": "es2020",
     "outFile": "dist/index.d.ts",
-    /* Bundler mode */
-    "moduleResolution": "bundler",
-    "allowImportingTsExtensions": true,
-    "resolveJsonModule": true,
-    "noEmit": false,
-    "jsx": "react-jsx",
-    "declaration": true,
-    /* Linting */
     "strict": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true
+    "esModuleInterop": true,
+    "declaration": true,
+
+    /* Bundler mode */
+    "jsx": "react-jsx",
+
   },
   "include": ["src"],
   "exclude": ["src/**/COMPONENT-PREVIEWS"],
-  "references": [{ "path": "./tsconfig.node.json" }]
 }
