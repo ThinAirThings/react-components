@@ -1,0 +1,52 @@
+.button {
+    background: $primary-color;
+    border: 1px solid #000;
+    border-radius: 4px;
+    color: $secondary-color;
+    cursor: pointer;
+    @include h-stack('center', 'center');
+    margin: 0;
+    padding: 6px 12px;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    vertical-align: middle;
+    white-space: nowrap;
+    .icon {
+        width: 18px;
+        height: 18px;
+        color: $secondary-color;
+        margin-right: 5px;
+    }
+    .text {
+        @include set-font(14px, 400);
+        color: $secondary-color;
+    }
+    &:hover {
+        background: $primary-color-hover;
+    }
+    .spinner {
+        height: 18px;
+        width: 18px;
+    }
+    &.secondary {
+        background: $secondary-color; 
+        color: $primary-color; 
+        border-color: $primary-color; 
+        &:hover {
+            background: $secondary-color-hover; 
+        }
+        .icon {
+            color: $primary-color; 
+        }
+        .text {
+            color: $primary-color; 
+        }
+        .spinner {
+            border-top-color: $primary-color; 
+        }
+    }
+}
+
+
+
