@@ -3,6 +3,7 @@ import { Icon } from 'react-feather'
 import { HStack } from '../Stacks/HStack';
 import { LoadingSpinner } from '../LoadingSpinner/LoadingSpinner';
 import { CSSProperties } from 'react';
+import classnames from 'classnames';
 export const Button = ({
     Icon,
     onClick,
@@ -20,8 +21,14 @@ export const Button = ({
     className?: string
     style?: CSSProperties
 }) => {
+
     return(
-        <button className={`${styles.button} ${secondary?styles.secondary:''} ${className??''}`}
+        <button 
+            className={classnames({
+                [styles.button]: true,
+                [styles.secondary]: secondary,
+                className
+            })}
             style={{...style}}
             onClick={onClick}
         >
