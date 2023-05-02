@@ -1,23 +1,26 @@
-.container {
-    @include v-stack('left', 'top');
-    width: 100%;
-}
-.label {
-    @include set-font(16px, 500);
-    color: $primary-color;
-    margin-bottom: 4px;
-}
-.textInput {
-    @include set-font(16px, 400);
-    color: $primary-color;
-    background-color: $secondary-color;
-    border: 1px solid $primary-color-hover;
-    border-radius: 4px;
-    padding: 5px;
-    width: 100%;
-    height: 30px;
-    &:focus {
-        outline: none;
-        border: 1px solid $primary-color;
+@layer Component {
+    .container {
+        @include v-stack('left', 'top');
+        width: 100%;
+    }
+    .label {
+        @include set-font(16px, 500);
+        color: $primary-color;
+        margin-bottom: 4px;
+    }
+    .textInput {
+        @include set-font(16px, 400);
+        color: $primary-color;
+        background-color: $secondary-color;
+        border: 1px solid $primary-color-hover;
+        border-radius: 4px;
+        padding: 5px;
+        width: 100%;
+        height: 30px;
+        &:focus {
+            outline: none;
+            border: 1px solid $primary-color;
+        }
     }
 }
+
