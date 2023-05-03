@@ -21,7 +21,6 @@ export const Button = ({
     className?: string
     style?: CSSProperties
 }) => {
-
     return(
         <button 
             className={classnames({
